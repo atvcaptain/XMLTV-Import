@@ -5,7 +5,7 @@ import glob
 import os
 
 
-class build_trans(Command):
+class build_trans(command):
 	description = 'Compile .po files into .mo files'
 
 	def initialize_options(self):
