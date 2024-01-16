@@ -1,11 +1,11 @@
 from __future__ import print_function
-from setuptools import command
+from setuptools import Command
 from setuptools.command.build import build as _build
 import glob
 import os
 
 
-class build_trans(command):
+class build_trans(Command):
 	description = 'Compile .po files into .mo files'
 
 	def initialize_options(self):
